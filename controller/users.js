@@ -1,4 +1,4 @@
-
+// Ашиглаж буй сангууд болон ашиглаж буй функцууд
 const MyError = require("../utils/myError");
 const asyncHandler = require('express-async-handler');
 const path = require('path');
@@ -7,6 +7,7 @@ const User = require("../models/User");
 const sendEmail = require("../utils/email")
 const crypto = require('crypto');
 
+// Бүртгэл үүсгэж буй хэсэг
 exports.register = asyncHandler(async (req, res, next) => {
 
     const user = await User.create(req.body);

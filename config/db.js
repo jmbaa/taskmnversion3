@@ -6,9 +6,9 @@ const connectDB = async () => {
           useNewUrlParser: true,
           useUnifiedTopology: true,
         });
-        console.log('MongoDB connected');
+        console.log(`MongoDB connected here: \n${process.env.MONGODB_URI}`);
       } catch (error) {
-        console.log(error.message);
+        console.log('MongoDB server-тэй холбогдох үед алдаа гарлаа: '+error.message);
         process.exit(1);
       }
 };

@@ -21,9 +21,7 @@ const injectDb = require("./middleware/injectDb");
 // Аппын тохиргоог process.env рүү ачаалах
 dotenv.config({ path: "./config/config.env" });
 
-const db = require("./config/db-mysql");
-
-connectDB_();
+connectDB();
 
 
 const app = express();
@@ -39,30 +37,12 @@ var accessLogStream = rfs.createStream('access.log', {
 app.use(express.json());
 app.use(fileupload());
 app.use(logger);
-app.use(injectDb(db));
 app.use(morgan('combined', {stream: accessLogStream}));
 app.use("/api/v1/categories", categoriesRoutes);
 app.use("/api/v1/books", booksRoutes);
 app.use("/api/v1/users", usersRoutes); 
 app.use("/api/v1/comments", commentsRoutes); 
 app.use(errorHandler);
-
-db.user.belongsToMany(db.book, { through: db.comment });
-db.book.belongsToMany(db.user, { through: db.comment });
-db.user.hasMany(db.comment);
-db.comment.belongsTo(db.user);
-db.category.hasMany(db.book);
-db.book.belongsTo(db.category);
-db.book.hasMany(db.comment);
-db.comment.belongsTo(db.book);
-
-db.sequelize
-  .sync()
-  .then((result) => {
-    console.log("sync hiigdlee...");
-  })
-  .catch((err) => console.log(err));
-
 
 const server = app.listen(
     process.env.PORT,
