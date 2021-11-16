@@ -1,0 +1,6 @@
+::1 - - [05/Oct/2021:14:58:15 +0000] "GET /api/v1/categories?select=name%20slug HTTP/1.1" 200 554 "-" "PostmanRuntime/7.28.2"
+::1 - - [05/Oct/2021:14:58:22 +0000] "GET /api/v1/categories?select=name%20slug HTTP/1.1" 200 554 "-" "PostmanRuntime/7.28.2"
+::1 - - [05/Oct/2021:14:58:27 +0000] "GET /api/v1/categories/5e90434cd433fa11b078ed8a HTTP/1.1" 200 8889 "-" "PostmanRuntime/7.28.2"
+::1 - - [23/Oct/2021:12:58:19 +0000] "POST /tickets HTTP/1.1" 404 147 "-" "PostmanRuntime/7.28.2"
+::1 - - [23/Oct/2021:12:58:28 +0000] "GET /api/v1/books HTTP/1.1" 200 9438 "-" "PostmanRuntime/7.28.2"
+::1 - - [23/Oct/2021:12:58:38 +0000] "GET /api/v1/categories/5e96cc1ba816c94e009a9c9e/books HTTP/1.1" 200 6082 "-" "PostmanRuntime/7.28.2"

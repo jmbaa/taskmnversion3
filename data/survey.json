@@ -1,0 +1,19 @@
+[
+    {
+        "_id": "6193eb7afa5bebd3077b9411",
+        "name": "MCS компаны нийт ажилчидийн асуулга", 
+        "description": "Тус компанид ажилдаг үндсэн ажилчидаас авах судалгаа",
+        "createdUserId": null,
+        "createdOrganizationId": "6193eae127ccbd78cb257fed",
+        "surveyTypeId": "6193d9ab9d70bda168101ea2",
+        "ageStart": 20,
+        "ageEnd": 30,
+        "beAddress": "6193d9a59d70bda168101e0b",
+        "beGender": false,
+        "deadline": "2021-12-12",
+        "beCount": 1000,
+        "pricePerUser": 10000,
+        "available": true,
+        "isPaid": true
+    }
+]

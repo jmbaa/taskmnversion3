@@ -4,9 +4,27 @@ const jsonwebtoken = require('jsonwebtoken');
 const crypto = require('crypto');
 
 const UserSchema = new mongoose.Schema({
-    name:{
+    regNumber:{
         type: String,
-        required: [true, 'Хэрэглэгчийн нэрийг оруулна уу'],
+        maxlength: 10,
+        unique: true,
+        required: [true, 'Та регистерийн дугаараа оруулна уу'],
+    },
+    firstName:{
+        type: String,
+        required: [true, 'Хэрэглэгчийн өөрийн нэрийг оруулна уу'],
+    },
+    lastName:{
+        type: String,
+        required: [true, 'Хэрэглэгчийн овог нэрийг оруулна уу'],
+    },
+    phone:{
+        type: Number,
+        required: [true, 'Гар утасны дугаар оруулна уу'],
+    },
+    balance:{
+        type: Number,
+        defualt: 0
     },
     email: {
         type: String,
@@ -15,7 +33,20 @@ const UserSchema = new mongoose.Schema({
         match: [
             /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
             "Цахим хаяг буруу байна."
-        ]
+        ]   
+    },
+    address: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Address',
+        required: true,
+    },
+    isPhoneActivated:{
+        type: Boolean,
+        default: false,
+    },
+    isMailActivated:{
+        type: Boolean,
+        default: false,
     },
     role: {
         type: String,
@@ -37,7 +68,7 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
     },
-    }, 
+    }
 );
 
 UserSchema.pre('save', async function (next) {

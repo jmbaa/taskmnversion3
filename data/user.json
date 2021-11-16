@@ -2,24 +2,42 @@
     {
         "role": "user",
         "_id": "60e992610ad29e44e4ec5629",
-        "name": "erdenebat",
         "email": "user@gmail.com",
+        "regNumber": "АР83123121",
+        "firstName": "Baterdene",
+        "lastName": "Erdenebat",
+        "phone": "99912323",
+        "address":"6174f0750526c9d96294e6c9",
+        "isPhoneActivated": "false",
+        "isMailActivated": "false",
         "password": "12345678"
     },
 
     {
         "role": "operator",
         "_id": "60e975185b60de320699d5a5",
-        "name": "Naranzul",
         "email": "op@gmail.com",
+        "regNumber": "ОР83123121",
+        "firstName": "Naranzul",
+        "lastName": "Ganbaatar",
+        "phone": "99312323",
+        "address":"6174f0750526c9d96294e6c9",
+        "isPhoneActivated": "false",
+        "isMailActivated": "false",
         "password": "12345678"
     },
 
     {
-        "role": "user",
+        "role": "operator",
         "_id": "60e99ab70bf9345137e0857b",
-        "name": "Admin",
         "email": "admin@gmail.com",
+        "regNumber": "МР93123121",
+        "firstName": "Admin",
+        "lastName": "Admin",
+        "phone": "99312323",
+        "address":"6174f0750526c9d96294e6c9",
+        "isPhoneActivated": "false",
+        "isMailActivated": "false",
         "password": "12345678"
     }
 ]

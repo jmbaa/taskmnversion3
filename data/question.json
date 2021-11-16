@@ -1,0 +1,57 @@
+[
+    {
+        "_id": "6193f8c98b20993dfdf16a13",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0e",
+        "question": "Та өөрийн ажилдаа сэтгэл хангалуун байдаг уу?",
+        "possibleAnswers": ["Сэтгэл хангалуун", "Сайн", "Дунд зэрэг", "Муу"]
+    },
+
+    {
+        "_id": "6193f8c98b20993dfdf16a14",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0e",
+        "question": "Таны ажлын байр тав тухтай юу?",
+        "possibleAnswers": ["Сэтгэл хангалуун", "Сайн", "Дунд зэрэг", "Муу"]
+    },
+
+    {
+        "_id": "6193f8c98b20993dfdf16a15",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0e",
+        "question": "Таны ажлын байран дээрээ их стрессддэг үү?",
+        "possibleAnswers": ["Огт үгүй", "Хааяа", "Дунд зэрэг", "Маш их"]
+    },
+
+    {
+        "_id": "6193f8c98b20993dfdf16a16",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0c",
+        "question": "Байгууллагын удирдлагуудад хэлэх санал хүсэлтээ дэлгэрэнгүй бич",
+        "possibleAnswers": []
+    },
+     
+    {
+        "_id": "6193f8c98b20993dfdf16a17",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0b",
+        "question": "Халахыг хүсэж буй ажилтан нэр бич",
+        "possibleAnswers": []
+    },
+
+    {
+        "_id": "6193f8c98b20993dfdf16a18",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0b",
+        "question": "Шилдэг ажилтаны нэр бич",
+        "possibleAnswers": []
+    },
+     
+    {
+        "_id": "6193f8c98b20993dfdf16a19",
+        "surveyId": "6193eb7afa5bebd3077b9411",
+        "questionTypeId": "6193f8c98b20993dfdf16a0d",
+        "question": "Таны бодлоор эдгээрээс аль нь компаний үнэт зүйлс вэ?",
+        "possibleAnswers": ["Ажилчид", "Хувьцаа", "Хувьцаа эзэмшигчид", "Компаны брэнд бүтээгдэхүүн", "Компаны үл хөдлөх хөрөнгө"]
+    }
+]

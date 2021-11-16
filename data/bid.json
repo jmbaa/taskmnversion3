@@ -1,0 +1,50 @@
+[
+    {
+        "bidUserId": "60e992610ad29e44e4ec5629",
+        "taskId": "61893dbcd4ec237eac941648",
+        "description": "Би шааж чадна аа надад итгэ",
+        "amount": 2500000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-12-01"
+    },
+    {
+        "bidUserId": "60e992610ad29e44e4ec5629",
+        "taskId": "61893dbcd4ec237eac941648",
+        "description": "Би хийж чадах хангалтаай туршлагтай сда.",
+        "amount": 200000,
+        "startDate": "2021-11-10",
+        "endDate": "2021-12-31"
+    },
+    {
+        "bidUserId": "60e975185b60de320699d5a5",
+        "taskId": "61893dbcd4ec237eac941648",
+        "description": "Би хийе",
+        "amount": 25000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-11-05"
+    },
+    {
+        "bidUserId": "60e975185b60de320699d5a5",
+        "taskId": "61893dbcd4ec237eac941648",
+        "description": "Хэлж биш хийж харуулна",
+        "amount": 20000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-11-05"
+    },
+    {
+        "bidUserId": "60e99ab70bf9345137e0857b",
+        "taskId": "61893dbcd4ec237eac941648",
+        "description": "Монгол ялна",
+        "amount": 8000,
+        "startDate": "2021-11-05",
+        "endDate": "2021-11-10"
+    },
+    {
+        "bidUserId": "60e99ab70bf9345137e0857b",
+        "taskId": "61893dbcd4ec237eac941648",
+        "description": "аррр аррр арр",
+        "amount": 85000,
+        "startDate": "2021-11-06",
+        "endDate": "2021-11-18"
+    }
+]

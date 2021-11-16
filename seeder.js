@@ -2,21 +2,40 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 const colors = require('colors');
 const dotenv = require('dotenv');
-const Category = require("./models/Category");
 const Book = require("./models/Book");
 const User = require("./models/User");
+const Bid = require("./models/Bid");
+const Address = require("./models/Address");
+const Organization = require('./models/Organization');
+const TaskCategory = require("./models/TaskCategory");
+const Task = require('./models/Task');
+const SurveyType = require('./models/SurveyType');
+const Survey = require('./models/Survey');
+const QuestionType = require('./models/QuestionType');
+const Question = require('./models/Question');
+const Answer = require('./models/Answers');
 
 dotenv.config({path: './config/config.env'});
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
     useUnifiedTopology:true,
 });
 
-const categories = JSON.parse(
-    fs.readFileSync(__dirname + '/data/category.json', 'utf-8')
+const address = JSON.parse(
+    fs.readFileSync(__dirname + '/data/address.json', 'utf-8')
+);
+
+const organizations = JSON.parse(
+    fs.readFileSync(__dirname + '/data/organization.json', 'utf-8')
+);
+
+const bids = JSON.parse(
+    fs.readFileSync(__dirname + '/data/bid.json', 'utf-8')
+);
+
+const taskCategories = JSON.parse(
+    fs.readFileSync(__dirname + '/data/taskCategory.json', 'utf-8')
 );
 
 const books = JSON.parse(
@@ -27,25 +46,66 @@ const users = JSON.parse(
     fs.readFileSync(__dirname + '/data/user.json', 'utf-8')
 );
 
-const importData = async () => {
+const tasks = JSON.parse(
+    fs.readFileSync(__dirname + '/data/task.json', 'utf-8')
+);
+
+const surveyType = JSON.parse(
+    fs.readFileSync(__dirname + '/data/surveyType.json', 'utf-8')
+);
+
+const survey = JSON.parse(
+    fs.readFileSync(__dirname + '/data/survey.json', 'utf-8')
+);
+
+const questionType = JSON.parse(
+    fs.readFileSync(__dirname + '/data/questionType.json', 'utf-8')
+);
+
+const question = JSON.parse(
+    fs.readFileSync(__dirname + '/data/question.json', 'utf-8')
+);
+
+const answer = JSON.parse(
+    fs.readFileSync(__dirname + '/data/answer.json', 'utf-8')
+);
+
+
+const importData = async () => {    
     try{
-        await Category.create(categories);
-        await Book.create(books);
+        await Address.create(address);
+        await TaskCategory.create(taskCategories);
         await User.create(users);
+        await Organization.create(organizations);
+        await Task.create(tasks);
+        await Bid.create(bids);
+        await SurveyType.create(surveyType);
+        await Survey.create(survey);
+        await QuestionType.create(questionType);
+        await Question.create(question);
+        await Answer.create(answer);
         console.log("Өгөгдлийг дүүргэлээ");
     }catch (err){
-        console.log(err);
+        console.log(err.message);
     }
 }
 
 const deleteData = async () => {
     try{
-        await Category.deleteMany();
-        await Book.deleteMany();
+        await Address.deleteMany();
+        await TaskCategory.deleteMany();
         await User.deleteMany();
+        await Organization.deleteMany();
+        await Task.deleteMany();
+        await Bid.deleteMany();
+        await SurveyType.deleteMany();
+        await Survey.deleteMany();
+        await QuestionType.deleteMany();
+        await Question.deleteMany();
+        await Answer.deleteMany();
         console.log("Өгөгдлийг устгалаа");
     } catch(err){
-        console.log(err);
+        console.log(err.message);
     }
 };
 

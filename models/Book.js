@@ -27,18 +27,12 @@ const BookSchema = new mongoose.Schema({
             "Зохиогчийн нэрийн урт дээд тал нь 200 тэмдэгт байх ёстой",
         ],
     },
-    averageRating: {
-        type: Number,
-        min: [1, "Рейтинг хамгийн багадаа 1 байх ёстой"],
-        max: [10, "Рейтинг хамгийн ихдээ 10 байх ёстой"],
-    },
     price: {
-        type: Number,
+        type: String,
         required: [true, "Номын үнийг оруулна уу!"],
         min: [500, "Номын үнэ хамгийн багадаа 500 төгрөг байх"],
     },
 
-    balance: Number,
     content: {
         type: String,
         required: [true, "Номын тайлбарыг оруулна уу!"],
@@ -106,7 +100,6 @@ BookSchema.post('remove', function() {
 });
 
 BookSchema.virtual('zohiogch').get(function(){
-
 
     if(!this.author) return "";
  

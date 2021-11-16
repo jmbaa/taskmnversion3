@@ -1,0 +1,67 @@
+[
+    {
+        "_id": "61893dbcd4ec237eac941648",
+        "createdUser": "60e992610ad29e44e4ec5629",
+        "selectedBid": null,
+        "taskCategory": "5e90434cd433fa11b078ed8a",
+        "status": "unpaid",
+        "description": "Цахимаар ганцаарёилсан англи хэлний багш хөлсөлнө. 1 удаа цахимаар заалгуулаад таалагдвал тохиролцоно. цаашид хамтран ажиллаж байна.",
+        "needskills": ["багш", "цахим"],
+        "startPrice": 2500000,
+        "endPrice": 3000000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-12-01"
+    },
+    {
+        "_id": "61893dbcd4ec238eac941648",
+        "createdUser": "60e99ab70bf9345137e0857b",
+        "selectedBid": null,
+        "taskCategory": "5e90434cd433fa11b078ed8a",
+        "status": "active",
+        "description": "Цахимаар ганцаарёилсан англи хэлний багш хөлсөлнө. 1 удаа цахимаар заалгуулаад таалагдвал тохиролцоно. цаашид хамтран ажиллаж байна.",
+        "needskills": ["багш", "цахим"],
+        "startPrice": 2500000,
+        "endPrice": 3000000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-12-01"
+    },
+    {
+        "_id": "61893dbcd4ec239eac941648",
+        "createdUser": "60e99ab70bf9345137e0857b",
+        "selectedBid": null,
+        "taskCategory": "5e90434cd433fa11b078ed8a",
+        "status": "cancelled",
+        "description": "Цахимаар ганцаарёилсан англи хэлний багш хөлсөлнө. 1 удаа цахимаар заалгуулаад таалагдвал тохиролцоно. цаашид хамтран ажиллаж байна.",
+        "needskills": ["багш", "цахим"],
+        "startPrice": 2500000,
+        "endPrice": 3000000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-12-01"
+    },
+    {
+        "_id": "61893dbcd4ec210eac941648",
+        "createdUser": "60e992610ad29e44e4ec5629",
+        "selectedBid": null,
+        "taskCategory": "5e90434cd433fa11b078ed8a",
+        "status": "finished",
+        "description": "Цахимаар ганцаарёилсан англи хэлний багш хөлсөлнө. 1 удаа цахимаар заалгуулаад таалагдвал тохиролцоно. цаашид хамтран ажиллаж байна.",
+        "needskills": ["багш", "цахим"],
+        "startPrice": 2500000,
+        "endPrice": 3000000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-12-01"
+    },
+    {
+        "_id": "61893dbcd4ec211eac941648",
+        "createdUser": "60e975185b60de320699d5a5",
+        "selectedBid": null,
+        "taskCategory": "5e90434cd433fa11b078ed8a",
+        "status": "unfinished",
+        "description": "Цахимаар ганцаарчилсан англи хэлний багш хөлсөлнө. 1 удаа цахимаар заалгуулаад таалагдвал тохиролцоно. цаашид хамтран ажиллаж байна.",
+        "needskills": ["багш", "цахим"],
+        "startPrice": 2500000,
+        "endPrice": 3000000,
+        "startDate": "2021-11-01",
+        "endDate": "2021-12-01"
+    }
+]

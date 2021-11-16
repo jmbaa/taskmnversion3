@@ -1,0 +1,68 @@
+[
+    {
+        "regNumber": "5056616",
+        "name": "Өрнөндэлгэрэх од",
+        "registeredDate": "2006-04-17",
+        "type": "ХХК",
+        "isForProfit": "1",
+        "address": "Улаанбаатар, Баянзүрх, 6-р хороо, 211 тоот",
+        "phone": "99912323",
+        "mail":"info@urnuhdelgereh.com",
+        "password": "1234"
+    },
+    {
+        "regNumber": "2867249",
+        "name": "Экохүрээ",
+        "registeredDate": "2005.10.03 ",
+        "type": "ХХК",
+        "isForProfit": "1",
+        "address": "Улаанбаатар, Баянзүрх, 1-р хороо, 301 тоот",
+        "phone": "99111212",
+        "mail":"info@ecohuree.com",
+        "password": "0011"
+    },
+    {
+        "regNumber": "5066751",
+        "name": "Эй Эм Си Эс",
+        "registeredDate": "2006.09.08",
+        "type": "ХХК",
+        "isForProfit": "1",
+        "address": "Улаанбаатар, Хан-Уул, 15-р хороо, нархан, 53, 11 тоот",
+        "phone": "99511212",
+        "mail":"info@huree.com",
+        "password": "0011"
+    },
+    {
+        "regNumber": "3245987",
+        "name": "Од",
+        "registeredDate": "2006-04-17",
+        "type": "ХХК",
+        "isForProfit": "0",
+        "address": "Улаанбаатар, Баянзүрх, 6-р хороо, 211 тоот",
+        "phone": "99111111",
+        "mail":"info@od.com",
+        "password": "1234"
+    },
+    {
+        "regNumber": "9999232",
+        "name": "Монос",
+        "registeredDate": "2005.10.03 ",
+        "type": "ХХК",
+        "isForProfit": "1",
+        "address": "Улаанбаатар, Баянзүрх, 1-р хороо, 301 тоот",
+        "phone": "77333333",
+        "mail":"info@monos.com",
+        "password": "0011"
+    },
+    {
+        "regNumber": "6000827",
+        "name": "Баавар",
+        "registeredDate": "2015.09.08",
+        "type": "ХХК",
+        "isForProfit": "1",
+        "address": "Улаанбаатар, Хан-Уул, 15-р хороо, нархан, 53, 11 тоот",
+        "phone": "77331111",
+        "mail":"info@baawar.com",
+        "password": "9900"
+    }
+]
