@@ -42,7 +42,7 @@ exports.login = asyncHandler(async (req, res, next) => {
 
     if (!ok) {
         throw new MyError('Цахим хаяг эсвэл нууц үгээ зөв оруулна уу', 401);
-    }
+    }               
 
     res.status(200).json({
         success: true,
@@ -51,6 +51,32 @@ exports.login = asyncHandler(async (req, res, next) => {
     });
 });
 
+//  do logout
+exports.logout = asyncHandler(async (req, res, next) => {
+    console.log("end shajiiin")
+    // Тухайн хэрэглэгч байгаа эсэхийг шалгана
+    const user = await User.findById(req.userId);
+    res.status(200).json({
+        success: true,
+        // token: user.getJWT(),
+        user: user,
+    });
+    // if (!user) {
+    //     throw new MyError('Цахим хаяг эсвэл нууц үгээ зөв оруулна уу', 401);
+    // }
+
+    // const ok = await user.checkPassword(password);
+
+    // if (!ok) {
+    //     throw new MyError('Цахим хаяг эсвэл нууц үгээ зөв оруулна уу', 401);
+    // }               
+
+    res.status(200).json({
+        success: true,
+        // token: user.getJWT(),
+        // user: user,
+    });
+});
 
 exports.getUsers = asyncHandler(async (req, res, next) => {
 
@@ -72,8 +98,8 @@ exports.getUsers = asyncHandler(async (req, res, next) => {
 
     res.status(200).json({
         success: true,
-        data: users,
         pagination,
+        data: users,
     });
 });
 

@@ -9,6 +9,10 @@ const QuestionSchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: 'QuestionType',
     },
+    createdUserId:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+    },
     question: {
         type: String,
         required: [true, 'Асуултаа оруулна уу!'],

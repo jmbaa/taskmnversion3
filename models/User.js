@@ -88,6 +88,7 @@ UserSchema.methods.getJWT = function () {
         process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRESIN, 
     });
+    
     return token;
 };
 

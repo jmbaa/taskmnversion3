@@ -5,7 +5,7 @@
         "description": "Тус компанид ажилдаг үндсэн ажилчидаас авах судалгаа",
         "createdUserId": null,
         "createdOrganizationId": "6193eae127ccbd78cb257fed",
-        "surveyTypeId": "6193d9ab9d70bda168101ea2",
+        "surveyType": "6193d9ab9d70bda168101ea2",
         "ageStart": 20,
         "ageEnd": 30,
         "beAddress": "6193d9a59d70bda168101e0b",

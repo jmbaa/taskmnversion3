@@ -10,6 +10,10 @@ const OrganizationSchema = new mongoose.Schema({
         unique: true,
         required: [true, 'Байгууллагын регистерийн дугаар оруулна уу'],
     },
+    role:{
+        type: String,
+        defalut: "organization",
+    },
     name:{
         type: String,
         required: [true, 'Байгууллагын нэрийг оруулна уу'],
@@ -41,7 +45,7 @@ const OrganizationSchema = new mongoose.Schema({
     password: {
         type: String,
         minlength: 4,
-        required: [true, "Хэрэглэгчийн нууц үгийг оруулах ёстой."],
+        required: [true, "Байгууллагын нууц үгийг оруулах ёстой."],
         select: false,
     },
     resetPasswordToken: String,
@@ -55,7 +59,6 @@ const OrganizationSchema = new mongoose.Schema({
 );
 
 OrganizationSchema.pre('save', async function (next) {
-
     // нууц үг өөрчлөгдөөгүй бол дараагийн алхам руу шилжих
     if(!this.isModified("password"))
         next();
@@ -65,11 +68,11 @@ OrganizationSchema.pre('save', async function (next) {
     this.password = await bcrypt.hash(this.password, salt);
 });
 
-OrganizationSchema.methods.getJWT = function () {
+OrganizationSchema.methods.getOrgJWT = function () {
     const token = jsonwebtoken.sign (
-        { id: this._id, role: this.role },
+        { id: this._id, regNumber: this.regNumber, role: this.role},
         process.env.JWT_SECRET, {
-        expiresIn: process.env.JWT_EXPIRESIN, 
+        expiresIn: process.env.JWT_EXPIRESIN,
     });
     return token;
 };
@@ -80,7 +83,7 @@ OrganizationSchema.methods.checkPassword = async function (enteredPassword) {
 
 OrganizationSchema.methods.generatePassToken = function () {
     const token = jsonwebtoken.sign (
-        { id: this._id, role: this.role },
+        { id: this._id, regNumber: this.regNumber, role: this.role },
         process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRESIN, 
     });

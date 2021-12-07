@@ -5,6 +5,7 @@ const router = express.Router();
 const {
     register,
     login,
+    logout,
     getUsers,
     getUser,
     updateUser,
@@ -19,7 +20,6 @@ const { getUserComments } = require('../controller/comments.js');
 
 
 // http://localhost:8000/app/v1/users
-
 router.route("/").get(getUsers).post(createUser);
 
 router.route("/register").post(register);
@@ -29,6 +29,8 @@ router.route("/reset-password").post(resetPassword);
 
 
 router.use(protect);
+
+router.route("/logout").post(logout);
 
 router
     .route("/:userId")

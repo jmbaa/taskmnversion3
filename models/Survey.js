@@ -28,7 +28,7 @@ const SurveySchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: 'Organization',
     },
-    surveyTypeId: {
+    surveyType: {
         type: mongoose.Schema.ObjectId,
         ref: 'SurveyType',
     },
@@ -64,8 +64,8 @@ const SurveySchema = new mongoose.Schema({
         type: Number,
         required: [true, "Тус судалгааг бөглөхөд нэг хүнд олгогдох мөнгөн дүнг оруулна уу!"],
     },
-    available: [Boolean],
-    isPaid: [Boolean],
+    available: Boolean,
+    isPaid: Boolean,
     createdAt: {
         type: Date,
         default: Date.now,

@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 const { transliterate, slugify } = require('transliteration');
 
 const TaskSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: [true, 'Таскын нэр оруулна уу'],
+    },
     createdUser: {
         type: mongoose.Schema.ObjectId,
         ref: 'User',

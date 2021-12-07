@@ -1,6 +1,7 @@
 [
     {
         "regNumber": "5056616",
+        "role": "organization",
         "name": "Өрнөндэлгэрэх од",
         "registeredDate": "2006-04-17",
         "type": "ХХК",
@@ -12,6 +13,7 @@
     },
     {
         "regNumber": "2867249",
+        "role": "organization",
         "name": "Экохүрээ",
         "registeredDate": "2005.10.03 ",
         "type": "ХХК",
@@ -22,9 +24,10 @@
         "password": "0011"
     },
     {
-        "regNumber": "5066751",
-        "name": "Эй Эм Си Эс",
-        "registeredDate": "2006.09.08",
+        "regNumber": "60002327",
+        "role": "organization",
+        "name": "Хүрээ констракшн девелопмент",
+        "registeredDate": "2015.09.08",
         "type": "ХХК",
         "isForProfit": "1",
         "address": "Улаанбаатар, Хан-Уул, 15-р хороо, нархан, 53, 11 тоот",
@@ -34,6 +37,7 @@
     },
     {
         "regNumber": "3245987",
+        "role": "organization",
         "name": "Од",
         "registeredDate": "2006-04-17",
         "type": "ХХК",
@@ -45,6 +49,7 @@
     },
     {
         "regNumber": "9999232",
+        "role": "organization",
         "name": "Монос",
         "registeredDate": "2005.10.03 ",
         "type": "ХХК",
@@ -56,6 +61,7 @@
     },
     {
         "regNumber": "6000827",
+        "role": "organization",
         "name": "Баавар",
         "registeredDate": "2015.09.08",
         "type": "ХХК",

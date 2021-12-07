@@ -17,11 +17,11 @@ exports.protect = asyncHandler(async (req, res, next) => {
         throw new MyError('Токен байхгүй байна. ',
             400
         );
-    } 
+    }
 
     const tokenObj = jwt.verify(token, process.env.JWT_SECRET);
-    req.userId = tokenObj.id;
-    req.userRole = tokenObj.role;
+        req.userId = tokenObj.id;
+        req.userRole = tokenObj.role;
     next();
 });
 

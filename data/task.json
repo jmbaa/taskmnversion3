@@ -1,6 +1,7 @@
 [
     {
         "_id": "61893dbcd4ec237eac941648",
+        "name": "name 1",
         "createdUser": "60e992610ad29e44e4ec5629",
         "selectedBid": null,
         "taskCategory": "5e90434cd433fa11b078ed8a",
@@ -14,6 +15,7 @@
     },
     {
         "_id": "61893dbcd4ec238eac941648",
+        "name": "name 2",
         "createdUser": "60e99ab70bf9345137e0857b",
         "selectedBid": null,
         "taskCategory": "5e90434cd433fa11b078ed8a",
@@ -27,6 +29,7 @@
     },
     {
         "_id": "61893dbcd4ec239eac941648",
+        "name": "name 3",
         "createdUser": "60e99ab70bf9345137e0857b",
         "selectedBid": null,
         "taskCategory": "5e90434cd433fa11b078ed8a",
@@ -40,6 +43,7 @@
     },
     {
         "_id": "61893dbcd4ec210eac941648",
+        "name": "name 4",
         "createdUser": "60e992610ad29e44e4ec5629",
         "selectedBid": null,
         "taskCategory": "5e90434cd433fa11b078ed8a",
@@ -53,6 +57,7 @@
     },
     {
         "_id": "61893dbcd4ec211eac941648",
+        "name": "name 5",
         "createdUser": "60e975185b60de320699d5a5",
         "selectedBid": null,
         "taskCategory": "5e90434cd433fa11b078ed8a",
